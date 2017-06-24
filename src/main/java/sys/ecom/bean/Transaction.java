@@ -54,7 +54,7 @@ public class Transaction {
 		query.setFirstResult(start);
 		query.setMaxResults(offset);
 		List<?> res=query.getResultList();
-		logger.info(t.getSimpleName()+" "+res.size()+" row of fetched");
+		logger.info(t.getSimpleName()+" "+res.size()+" row fetched");
 		return res;
 	}
 	
